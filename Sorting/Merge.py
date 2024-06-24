@@ -4,11 +4,11 @@ def merge(left, right):
 
     # Merge the two arrays while comparing elements
     while i < len(left) and j < len(right):
-        if left[i] < right[i]:
+        if left[i] < right[j]:
             merged.append(left[i])
             i += 1
         else:
-            merged.append(right[i])
+            merged.append(right[j])
             j += 1
 
     # If there are remaining elements in the left array, add them
